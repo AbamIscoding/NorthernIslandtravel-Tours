@@ -1,0 +1,306 @@
+
+.packages{
+    background: rgba(167, 223, 130, 0.26);
+    padding-bottom: 5rem;
+}
+
+.packages .package-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 2.1rem 0;
+    color: #333;
+}
+
+.packages .box-container{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin: 0 7rem;
+}
+
+.packages .box-container .box{
+    margin-bottom: 50px;
+    margin-top: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    background-color: #F1F8FF;
+}
+
+.packages .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.packages .box-container .box .package-content{
+    padding: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.packages .box-container .box .package-content h3{
+    font-size:1.5rem;
+    color: #333;
+    text-transform: capitalize;
+    
+}
+
+.packages .box-container .box .package-content h3 i{
+    font-size: 1.7rem;
+    /* color: orange; */
+    margin-right: 1.3rem;
+}
+
+.packages .box-container .box .package-content .description{
+    font-size: 16px;
+    color: #666;
+    list-style: none;
+    text-transform: capitalize;
+    margin: 10px 0 0 7px;
+    
+}
+
+.packages .box-container .box .package-content .stars i{
+    font-size:1.3rem;
+    color: orange;
+    margin-top: 20px;
+}
+
+.packages .box-container .box .package-content .price{
+    font-size: 1.6rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.packages .box-container .box .package-content span{
+    color: #666;
+    font-size: 1.3rem;
+    text-decoration: line-through;
+}
+
+.packages .box-container .box .package-content a{
+    text-transform: capitalize;
+    color: #ffffff;
+    background-color: orange;
+    padding: 12px 30px;
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+
+.packages .box-container .box .package-content .align2{
+    margin-top: 25px;
+}
+
+.packages .box-container .box .package-content .align3{
+    margin-top: 50px;
+}
+
+.box-container#blur.active{
+    filter: blur(10px);
+}
+
+@media screen and (max-width: 1200px) {
+    .packages .box-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 7rem;
+        flex-wrap: wrap;
+    }
+}
+
+.package-btn{
+    position: relative;
+    /*margin-left: 480px;*/
+}
+
+
+
+/* ---popup starts--- */
+#popup{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 5px 20px 30px 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #d0dbcb;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 10001;
+}
+
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.popup-content{
+    margin: 0 0 20px 50px;
+}
+
+.popup-content h1{
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.popup-content ul li{
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin: 0 0 3px 60px;
+}
+
+#popup a{
+    padding: 8px;
+    color: #111;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.popup-details{
+    margin: 5px 0 30px 30px;
+}
+
+.seemore {
+    text-transform: capitalize;
+    background-color: rgba(158, 187, 152, 0.659);
+    border-radius: 5px;
+    margin-left:25px;
+}
+
+.seemore:hover{
+    background-color: rgba(91, 224, 95, 0.366);
+}
+
+
+
+
+
+
+
+
+
+
+/* Itinerary Starts  */
+summary{
+    background-color: #84848487;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 15px auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+summary:hover{
+    background-color: #65725987;
+    color: #333;
+}
+
+.itinerary{
+    background: rgba(167, 223, 130, 0.26);
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    margin-top: -50px;
+    padding-bottom: 10%;
+}
+
+.itinerary .itinerary-title{
+    margin-top: 80px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #333;
+}
+
+.faq_body{
+    background-color: #bfe7b38b;
+    border-radius: 10px;
+    padding: 30px 10px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    column-gap: 50px;
+}
+.head1{
+    top: 10px;
+    text-transform: uppercase;
+}
+
+.faq_body .faq_container,.faq_container2{
+    margin: 0 auto;
+    max-width: 400px;
+    padding: auto;
+    position: relative;
+}
+
+.faq_container .days{
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.faq_container ul li{
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+.faq_container .day_tour ul li{
+    list-style: disc;
+}
+
+.faq_container .day_tour{
+    text-transform: capitalize;
+}
+
+.faq_container .day_tour h4{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.head2{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.faq_container2 .days{
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.faq_container2 .days_tour{
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.faq_container2 ul li{
+    list-style: none;
+    text-align: justify;
+}
+
+.faq_container2 .days_tour ul li{
+    list-style: disc;
+    text-align: justify;
+}
+
+.faq_container2 .days_tour h4{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 16px;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Batanes</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="navbar.js" defer></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- FontAwesome -->
+
+    <!-- testimonials -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- testimonials -->
+</head>
+
+<body>
+    <!-- Header section starts-->
+    <nav class="navbar-white" id="header">
+        <div class="navbar-brand">
+            <img src="assets/Inkednorthern_Island__travel_and_tours___logo__1__LI__1_-removebg-preview.png" alt="logo"
+                class="logo">
+            <div class="brand-title">
+                <h1>NORTHERN ISLAND</h1>
+                <p>Travel and Tours</p>
+            </div>
+        </div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links-white">
+            <ul>
+                <li><a href="#" class="navbtn-white">HOME</a></li>
+                <li><a href="#" class="navbtn-white">SERVICES</a></li>
+                <li><a href="#" class="navbtn-white">CONTACTS</a></li>
+                <li>
+                    <a href="#" class="navbtn-white">DISCOVER</a>
+                    <ul class="dropdown" id="dropdown">
+                        <li><a href="discover.html" id="dropdown1" class="navbtn-white">Cafe</a></li>
+                        <li><a href="discover-2.html" id="dropdown2" class="navbtn-white">Foods</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header Section Ends -->
+
+    <!-- services Section Starts -->
+    <section class="packages">
+
+        <h1 class="package-title">services</h1>
+
+        <div class="box-container" id="blur">
+
+            <div class="box">
+                <img src="assets/prenup.jpg" alt="Prenup Couple">
+                <div class="package-content">
+                    <h3><i class="fa-solid fa-user"></i>package 1</h3>
+
+                    <ul class="description">
+                        <li>beach town hotel</li>
+                        <li>free wi-fi connection</li>
+                        <li>daily breakfast</li>
+                    </ul>
+
+                    <div class="align1">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">Php 11,750 <span> Php 12,799</span></div>
+                        <a onclick="toggle()">details</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="assets/3pax.jpg" alt="Tres Marias">
+                <div class="package-content">
+                    <h3><i class="fa-solid fa-user"></i>package 2</h3>
+
+                    <ul class="description">
+                        <li>town proper homestay</li>
+                        <li>1 complimentary breakfast upon arrival</li>
+                    </ul>
+
+                    <div class="align2">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">Php 9,200 <span> Php 10,899</span></div>
+                        <a onclick="toggle()">details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/group.jpg" alt="Family Picture">
+                <div class="package-content">
+                    <h3><i class="fa-solid fa-user"></i>package 3</h3>
+
+                    <ul class="description">
+                        <li>no breakfast</li>
+                    </ul>
+
+                    <div class="align3">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">Php 8,300 <span> Php 9,999</span></div>
+                        <a onclick="toggle()">details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------Popup Starts----------->
+        <div>
+            <div class="popup-content" id="popup">
+                <a class="package-btn" onclick="toggle()">&times;</a>
+
+                <div class="popup-details">
+
+                    <h1>inclusion</h1>
+                    <ul>
+                        <li>airport transfer round-trip</li>
+                        <li>batan north tour</li>
+                        <li>batan south tour</li>
+                        <li>sabtang island tour</li>
+                        <li>lunch during tours</li>
+                        <li>all government fees</li>
+                        <li>san vicente port service RT</li>
+                        <li>boat fare roundtip</li>
+                        <li>Municipal fee</li>
+                        <li>Registration at tourist sabtang</li>
+                        <li>tour guide/driver/photographer</li>
+                        <li>cogon tourist tricycle (exclusive tours)</li>
+                    </ul>
+                </div>
+                <a class="seemore" href="package.html" style="font-size: 16px; color: white;">see More</a>
+
+                <script type="text/javascript">
+                    function toggle() {
+                        var blur = document.getElementById('blur');
+                        blur.classList.toggle('active')
+                        var popup = document.getElementById('popup');
+                        popup.classList.toggle('active')
+                    }
+                </script>
+            </div>
+
+        </div>
+
+
+        <!--------------Popup Ends------------->
+    </section>
+
+    <!-- Services Section Ends -->
+
+    <!---------------------------- footer -------------------------------->
+    <footer class="grid footer">
+        <span class="logo-container">
+        <img src="assets/Inkednorthern_Island__travel_and_tours___logo__1__LI__1_-removebg-preview.png" alt="logo"
+          class="logo" />
+        </span>
+        <span class="connect">
+          <h3>Connect</h3>
+          <div class="contacts">
+            <a href="https://www.facebook.com/northernislandtravelandtours" class="icon" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+              <p>Northern Island Travel and Tours</p>
+            </a>
+            <a href="mailto:northernislandtravel@gmail.com" class="icon">
+              <i class="fa-regular fa-envelope"></i>
+              <p>northernislandtravel@gmail.com</p>
+            </a>
+            <a href="tel:+63 967 277 3800" class="icon">
+              <i class="fa-solid fa-phone"></i>
+              <p>+63 967 277 3800</p>
+            </a>
+          </div>
+        </span>
+       
+        <span class="footer-navigation">
+          <h2>Return</h2>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <a href="#top" class="to-top">
+                <p>Go back to top</p>
+                <i class="fa-solid fa-arrow-up"></i>
+              </a>
+          </ul>
+        </span>
+        
+      </footer>
+    <!---------------------------- footer -------------------------------->
+</body>
+
+</html>

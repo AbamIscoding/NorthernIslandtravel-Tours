@@ -1,0 +1,124 @@
+summary{
+    background-color: #84848487;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 15px auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+summary:hover{
+    background-color: #65725987;
+    color: #333;
+}
+
+.itinerary{
+    background: rgba(167, 223, 130, 0.26);
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    margin-top: -50px;
+    padding-bottom: 10%;
+}
+
+.itinerary .itinerary-title{
+    margin-top: 80px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #333;
+}
+
+.faq_body{
+    background-color: #bfe7b38b;
+    border-radius: 10px;
+    padding: 30px 10px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    column-gap: 50px;
+}
+.head1{
+    top: 10px;
+    text-transform: uppercase;
+}
+.faq_body{
+    display: flex;
+}
+
+.faq_body .faq_container,.faq_container2{
+    margin: 0 auto;
+    max-width: 400px;
+    padding: auto;
+    position: relative;
+}
+
+.faq_container .days{
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.faq_container ul li{
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+.faq_container .day_tour ul li{
+    list-style: disc;
+}
+
+.faq_container .day_tour{
+    text-transform: capitalize;
+}
+
+.faq_container .day_tour h4{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.head2{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.faq_container2 .days{
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.faq_container2 .days_tour{
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.faq_container2 ul li{
+    list-style: none;
+    text-align: justify;
+}
+
+.faq_container2 .days_tour ul li{
+    list-style: disc;
+    text-align: justify;
+}
+
+.faq_container2 .days_tour h4{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 16px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .faq_body{
+        flex-direction: column;
+    }
+}

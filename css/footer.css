@@ -1,0 +1,107 @@
+
+
+.grid{
+    margin-top: 50px;
+    display: flex;
+}
+.footer{
+    background-color: #F1F8FF;
+    padding-top: 25px;
+}
+
+.logo-container{
+    flex: 1;
+
+}
+.footer .logo{
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+.connect{
+    flex: 1;
+}
+
+.connect h3{
+    font-size: 1.6rem;
+}
+
+.contacts{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .icon{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #222222;
+    margin: 5px;
+}
+
+.contacts .icon:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: 0.3s ease-in-out;
+}
+
+.contacts .icon i {
+    font-size: 1.2rem;
+}
+
+.contacts .icon p{
+    font-size: 0.85rem;
+    color: #343F4F;
+}
+
+.to-top{
+    display: flex;
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+}
+.map{
+    grid-column: 7;
+    margin-top: 20px;
+}
+.footer-navigation{
+    flex: 1;
+}
+.footer-navigation ul li{
+    list-style-type: none;
+}
+.footer-navigation ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.footer-navigation ul li a:hover{
+    font-size: 18px;
+    border-bottom: 3px solid grey;
+}
+.to-top:hover{
+    font-size: 18px;
+    transition: 0.5s;
+    border-bottom: 3px solid grey;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .connect{
+        margin-top: 50%;
+        margin-left: 50px;
+    }
+    .footer-navigation{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,144 @@
+
+.contacts-page .logo-contacts {
+    text-align: center;
+}
+
+.contacts-page .logo-contacts h3 {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.contacts-page .logo-contacts p {
+    font-size: 15px;
+    margin-top: -10px;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+
+.contact-contents {
+    padding: 9% 10%;
+}
+
+.contact-contents h1 {
+    margin-top: 50px;
+    font-size: 75px;
+    letter-spacing: 0;
+    width: 70%;
+    line-height: 71px;
+}
+
+.contact-contents p {
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 0px 15px;
+}
+
+.contact-contents .greathehe {
+    /*position: absolute;*/
+    right: 0;
+    width: 450px;
+    top: 20%;
+    margin-right: 10%;
+}
+
+.middle-contact {
+    font-size: 25px;
+    text-align: left;
+    background-image: url(../assets/Batan_view/13.jpg);
+    height: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.middle-contact h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 2px 2px 5px #000000;
+
+}
+
+.lets-get-in-touch {
+    margin: 3% 0px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lets-get-in-touch h2 {
+    font-size: 3rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.lets-get-in-touch p {
+    margin-top: 70px;
+}
+
+.lets-get-in-touch .socmeds {
+    margin-top: 4%;
+}
+
+.lets-get-in-touch .socmeds ul {
+    list-style-type: none;
+}
+
+.lets-get-in-touch .socmeds ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.left-section {
+    text-align: center;
+}
+
+.lets-get-in-touch .socmeds ul li i {
+    margin-right: 10px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section .emailadd {
+    margin-top: 50px;
+    height: 50px;
+    border-radius: 20px;
+    border: solid black 0.5px;
+    padding: 20px;
+}
+
+.right-section .firstname {
+    height: 50px;
+    border-radius: 20px;
+    border: solid black 0.5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.right-section .lastname {
+    height: 50px;
+    border-radius: 20px;
+    border: solid black 0.5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.right-section button {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3ea832;
+    color: white;
+}
